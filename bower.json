@@ -1,0 +1,11 @@
+{
+  "name": "lgtm_safari",
+  "version": "0.1.0",
+  "description": "LGTM extension for Safari",
+  "main": [
+    "Gruntfile.coffee"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
