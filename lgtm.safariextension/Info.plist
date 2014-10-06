@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Vazhenin Denis</string>
 	<key>Builder Version</key>
-	<string>9537.85.10.17.1</string>
+	<string>10600.1.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>lgtm</string>
 	<key>CFBundleIdentifier</key>
@@ -44,7 +44,7 @@
 		<dict>
 			<key>End</key>
 			<array>
-				<string>paste.js</string>
+				<string>lgtm.js</string>
 			</array>
 		</dict>
 		<key>Whitelist</key>
@@ -66,6 +66,8 @@
 			<key>Allowed Domains</key>
 			<array>
 				<string>github.com</string>
+				<string>*.github.com</string>
+				<string>lgtm.in</string>
 			</array>
 			<key>Include Secure Pages</key>
 			<true/>

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array/>
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>Alt+L</string>
+		<key>Key</key>
+		<string>lgtmkey</string>
+		<key>Title</key>
+		<string>Shortcut for lgtm</string>
+		<key>Type</key>
+		<string>Hidden</string>
+	</dict>
+</array>
 </plist>

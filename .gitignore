@@ -72,3 +72,6 @@ Temporary Items
 /node_modules
 
 # Exclude specific build products
+/*.safariextension/*.js
+/*.safariextension/*.html
+
