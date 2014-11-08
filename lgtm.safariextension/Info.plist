@@ -1,79 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Author</key>
-	<string>Vazhenin Denis</string>
-	<key>Builder Version</key>
-	<string>10600.1.25</string>
-	<key>CFBundleDisplayName</key>
-	<string>lgtm</string>
-	<key>CFBundleIdentifier</key>
-	<string>su.superhandsomecoder.lgtm</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleShortVersionString</key>
-	<string>0.1.0</string>
-	<key>CFBundleVersion</key>
-	<string>0.1.0</string>
-	<key>Chrome</key>
 	<dict>
-		<key>Global Page</key>
-		<string>global.html</string>
-		<key>Toolbar Items</key>
-		<array>
+		<key>Author</key>
+		<string>Vazhenin Denis</string>
+		<key>Builder Version</key>
+		<string>10600.1.25</string>
+		<key>CFBundleDisplayName</key>
+		<string>lgtm</string>
+		<key>CFBundleIdentifier</key>
+		<string>ninja.blaze.extensions.safari.lgtm</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleShortVersionString</key>
+		<string>0.2.0</string>
+		<key>CFBundleVersion</key>
+		<string>0.2.0</string>
+		<key>Chrome</key>
+		<dict>
+			<key>Global Page</key>
+			<string>global.html</string>
+			<key>Toolbar Items</key>
+			<array>
+				<dict>
+					<key>Command</key>
+					<string>do_lgtm</string>
+					<key>Identifier</key>
+					<string>lgtmButton</string>
+					<key>Image</key>
+					<string>t_icon.png</string>
+					<key>Label</key>
+					<string>lgtm</string>
+					<key>Palette Label</key>
+					<string>lgtm</string>
+					<key>Tool Tip</key>
+					<string>press for lgtm</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Content</key>
+		<dict>
+			<key>Scripts</key>
 			<dict>
-				<key>Command</key>
-				<string>do_lgtm</string>
-				<key>Identifier</key>
-				<string>lgtmButton</string>
-				<key>Image</key>
-				<string>t_icon.png</string>
-				<key>Label</key>
-				<string>lgtm</string>
-				<key>Palette Label</key>
-				<string>lgtm</string>
-				<key>Tool Tip</key>
-				<string>press for lgtm</string>
+				<key>End</key>
+				<array>
+					<string>lgtm.js</string>
+				</array>
 			</dict>
-		</array>
-	</dict>
-	<key>Content</key>
-	<dict>
-		<key>Scripts</key>
-		<dict>
-			<key>End</key>
+			<key>Whitelist</key>
 			<array>
-				<string>lgtm.js</string>
+				<string>http://github.com/*/*/pull/*</string>
+				<string>https://github.com/*/*/pull/*</string>
+				<string>http://github.com/*</string>
+				<string>https://github.com/*</string>
 			</array>
 		</dict>
-		<key>Whitelist</key>
-		<array>
-			<string>http://github.com/*/*/pull/*</string>
-			<string>https://github.com/*/*/pull/*</string>
-		</array>
-	</dict>
-	<key>Description</key>
-	<string>one lgtm worth thousand words...</string>
-	<key>DeveloperIdentifier</key>
-	<string>9MSN4PCVZ9</string>
-	<key>ExtensionInfoDictionaryVersion</key>
-	<string>1.0</string>
-	<key>Permissions</key>
-	<dict>
-		<key>Website Access</key>
+		<key>Description</key>
+		<string>one lgtm worth thousand words...</string>
+		<key>DeveloperIdentifier</key>
+		<string>9MSN4PCVZ9</string>
+		<key>ExtensionInfoDictionaryVersion</key>
+		<string>1.0</string>
+		<key>Permissions</key>
 		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>github.com</string>
-				<string>*.github.com</string>
-				<string>lgtm.in</string>
-			</array>
-			<key>Include Secure Pages</key>
-			<true/>
-			<key>Level</key>
-			<string>Some</string>
+			<key>Website Access</key>
+			<dict>
+				<key>Allowed Domains</key>
+				<array>
+					<string>github.com</string>
+					<string>*.github.com</string>
+					<string>lgtm.in</string>
+				</array>
+				<key>Include Secure Pages</key>
+				<true/>
+				<key>Level</key>
+				<string>Some</string>
+			</dict>
 		</dict>
+		<key>Website</key>
+		<string>http://blaze.ninja/lgtm_safari</string>
 	</dict>
-</dict>
 </plist>

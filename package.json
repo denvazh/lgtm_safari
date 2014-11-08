@@ -1,18 +1,19 @@
 {
-  "name": "lgtm_safari",
-  "version": "0.1.0",
-  "description": "LGTM extension for Safari",
+  "name": "lgtm",
+  "version": "0.2.0",
+  "description": "one lgtm worth thousand words...",
   "main": "gulpfile.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "safari",
     "extension",
     "lgtm",
     "merge",
     "pull request"
   ],
-  "author": "Denis Vazhenin",
+  "author": "Vazhenin Denis",
   "license": "MIT",
   "dependencies": {
     "coffee-script": "^1.8.0",
@@ -20,11 +21,17 @@
     "gulp": "^3.8.8",
     "gulp-coffee": "^2.2.0",
     "gulp-concat": "^2.4.1",
+    "gulp-json-editor": "^2.1.1",
     "gulp-plumber": "^0.6.6",
     "gulp-rev": "^1.1.0",
     "gulp-sourcemaps": "^1.2.2",
+    "gulp-tap": "^0.1.3",
     "gulp-uglify": "^1.0.1",
     "gulp-usemin2": "^0.2.4",
-    "wiredep": "^1.8.5"
-  }
+    "gulp-intermediate": "^3.0.1",
+    "plist": "git://github.com/denvazh/plist.js.git",
+    "wiredep": "^1.8.5",
+    "xml2js": "^0.4.4"
+  },
+  "homepage": "http://blaze.ninja/lgtm_safari"
 }
