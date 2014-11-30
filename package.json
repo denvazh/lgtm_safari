@@ -1,18 +1,12 @@
 {
   "name": "lgtm",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "one lgtm worth thousand words...",
   "main": "gulpfile.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "safari",
-    "extension",
-    "lgtm",
-    "merge",
-    "pull request"
-  ],
+  "keywords": ["safari", "extension", "lgtm", "merge", "pull request"],
   "author": "Vazhenin Denis",
   "license": "MIT",
   "dependencies": {

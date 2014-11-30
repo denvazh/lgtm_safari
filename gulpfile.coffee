@@ -138,18 +138,15 @@ gulp.task 'sync:plist', ->
             ['-x', '-c', 'Save', "Info.plist"],
             {cwd: tmpdir}
 
-      cmd.stdout.on 'data', (data) ->
-        console.log data.toString()
-
       cmd.stderr.on 'data', (data) ->
-        console.log "stderr: " + data
+        console.log "An error has occurred: " + data
 
       cmd.on 'close', callback
     ))
-    .pipe(gulp.dest('./tmp/tmp'))
+    .pipe(gulp.dest(dest.dir))
 
 # sync bower.json, package.json with project.json
-gulp.task 'sync:conf', ['sync:bower', 'sync:package']
+gulp.task 'sync:conf', ['sync:bower', 'sync:package', 'sync:plist']
 
 # default task
 gulp.task 'default', ['clean','watch']
