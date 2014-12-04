@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.0</string>
+	<string>0.3.1</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.0</string>
+	<string>0.3.1</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -54,7 +54,7 @@
 		</array>
 	</dict>
 	<key>Description</key>
-	<string>one lgtm worth thousand words...</string>
+	<string>one lgtm worth a thousand words...</string>
 	<key>DeveloperIdentifier</key>
 	<string>9MSN4PCVZ9</string>
 	<key>ExtensionInfoDictionaryVersion</key>
@@ -76,8 +76,8 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
+	<string>https://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
 	<key>Website</key>
-	<string>http://denvazh.github.io/lgtm_safari</string>
+	<string>https://github.com/denvazh/lgtm_safari</string>
 </dict>
 </plist>

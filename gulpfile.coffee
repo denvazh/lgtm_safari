@@ -118,6 +118,7 @@ gulp.task 'sync:package', ->
     )
     .pipe(gulp.dest("."))
 
+# update related values in Info.plist
 gulp.task 'sync:plist', ->
   project = require "./project.json"
   gulp.src("./#{dest.dir}/Info.plist")

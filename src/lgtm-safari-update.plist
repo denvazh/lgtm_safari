@@ -10,9 +10,9 @@
        <key>Developer Identifier</key>
        <string>9MSN4PCVZ9</string>
        <key>CFBundleVersion</key>
-       <string>0.3.0</string>
+       <string>0.3.1</string>
        <key>CFBundleShortVersionString</key>
-       <string>0.3.0</string>
+       <string>0.3.1</string>
        <key>URL</key>
        <string>http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
      </dict>

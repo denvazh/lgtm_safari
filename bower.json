@@ -1,12 +1,16 @@
 {
   "name": "lgtm",
-  "version": "0.3.0",
-  "description": "one lgtm worth thousand words...",
-  "main": ["Gruntfile.coffee"],
+  "version": "0.3.1",
+  "description": "one lgtm worth a thousand words...",
+  "main": [
+    "Gruntfile.coffee"
+  ],
   "dependencies": {
     "jquery": "~2.1.1"
   },
-  "authors": ["Vazhenin Denis"],
-  "homepage": "http://blaze.ninja/lgtm_safari",
+  "authors": [
+    "Vazhenin Denis"
+  ],
+  "homepage": "https://github.com/denvazh/lgtm_safari",
   "license": "MIT"
 }
