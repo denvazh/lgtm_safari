@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>lgtm</string>
 	<key>CFBundleIdentifier</key>
-	<string>ninja.blaze.extensions.safari.lgtm</string>
+	<string>denvazh.extensions.safari.lgtm</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -75,7 +75,9 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
 	<key>Website</key>
-	<string>http://blaze.ninja/lgtm_safari</string>
+	<string>http://denvazh.github.io/lgtm_safari</string>
 </dict>
 </plist>
