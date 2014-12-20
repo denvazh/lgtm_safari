@@ -24,9 +24,6 @@ src =
 dest =
   dir: 'lgtm.safariextension'
 
-tmp =
-  dir: '.tmp'
-
 # cleanup compiled javascript files
 gulp.task 'clean', (callback)->
   del([
@@ -119,7 +116,7 @@ gulp.task 'sync:package', ->
     .pipe(gulp.dest("."))
 
 # update related values in Info.plist
-gulp.task 'sync:plist', ->
+gulp.task 'sync:info:plist', ->
   project = require "./project.json"
   gulp.src("./#{dest.dir}/Info.plist")
     .pipe(tap((file)->
@@ -146,8 +143,36 @@ gulp.task 'sync:plist', ->
     ))
     .pipe(gulp.dest(dest.dir))
 
+# update related values in lgtm-safari-update.plist
+gulp.task 'sync:update:plist', ->
+  project = require "./project.json"
+  gulp.src("./#{src.dir}/lgtm-safari-update.plist")
+    .pipe(tap((file)->
+      src_file = plist.parse(String(file.contents))
+      if src_file['Extension Updates'] and src_file['Extension Updates'][0].length > 0
+        src_file['Extension Updates'][0]['CFBundleShortVersionString'] = project.version
+        src_file['Extension Updates'][0]['CFBundleVersion'] = project.version
+        src_file['Extension Updates'][0]['CFBundleIdentifier'] = project.release.BundleId
+        src_file['Extension Updates'][0]['Developer Identifier'] = project.release.DeveloperId
+        src_file['Extension Updates'][0]['URL'] = project.release.URL
+
+      dest_file = plist.build(src_file, {indent: '\t'})
+      file.contents = new Buffer(dest_file)
+    ))
+    .pipe(intermediate({ container: "update-plist-config" }, (tmpdir, callback) ->
+      cmd = spawn '/usr/libexec/PlistBuddy',
+            ['-x', '-c', 'Save', "lgtm-safari-update.plist"],
+            {cwd: tmpdir}
+
+      cmd.stderr.on 'data', (data) ->
+        console.log "An error has occurred: " + data
+
+      cmd.on 'close', callback
+    ))
+    .pipe(gulp.dest("./#{src.dir}"))
+
 # sync bower.json, package.json with project.json
-gulp.task 'sync:conf', ['sync:bower', 'sync:package', 'sync:plist']
+gulp.task 'sync:conf', ['sync:bower', 'sync:package', 'sync:info:plist', 'sync:update:plist']
 
 # default task
 gulp.task 'default', ['clean','watch']

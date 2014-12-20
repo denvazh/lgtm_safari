@@ -1,6 +1,6 @@
 {
   "name": "lgtm",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "one lgtm worth a thousand words...",
   "author": "Vazhenin Denis",
   "homepage": "https://github.com/denvazh/lgtm_safari",
@@ -11,5 +11,10 @@
     "lgtm",
     "merge",
     "pull request"
-  ]
+  ],
+  "release": {
+    "BundleId": "denvazh.extensions.safari.lgtm",
+    "DeveloperId": "9MSN4PCVZ9",
+    "URL": "http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz"
+  }
 }
