@@ -10,7 +10,7 @@ appendLgtm = (msg) ->
     submit_btn_area = document.getElementById("partial-new-comment-form-actions")
 
     if submit_btn_area
-      submit_btn_area = submit_btn_area.getElementsByClassName("primary")
+      submit_btn_area = submit_btn_area.getElementsByClassName("btn-primary")
       submit_btn_area[0].click() if submit_btn_area.length > 0
 
   return

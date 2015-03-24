@@ -1,6 +1,6 @@
 {
   "name": "lgtm",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "one lgtm worth a thousand words...",
   "main": "gulpfile.coffee",
   "scripts": {
@@ -18,7 +18,7 @@
   "dependencies": {
     "coffee-script": "^1.8.0",
     "del": "^0.1.3",
-    "gulp": "^3.8.8",
+    "gulp": "^3.8.11",
     "gulp-coffee": "^2.2.0",
     "gulp-concat": "^2.4.1",
     "gulp-json-editor": "^2.1.1",

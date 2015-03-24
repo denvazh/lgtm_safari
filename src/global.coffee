@@ -1,8 +1,7 @@
 # lgtm.in
-lgtmAPI = {
-  scheme: 'http',
+lgtmAPI =
+  scheme: 'http'
   endpoint: 'www.lgtm.in/g'
-}
 
 # Fetch json payload from lgtm.in
 lgtm = ->
