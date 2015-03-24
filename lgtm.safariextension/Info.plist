@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3.2</string>
+	<string>0.3.3</string>
 	<key>CFBundleVersion</key>
-	<string>0.3.2</string>
+	<string>0.3.3</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -76,7 +76,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
+	<string>https://denvazh.github.io/lgtm_safari/extensions/lgtm-safari-update.plist</string>
 	<key>Website</key>
 	<string>https://github.com/denvazh/lgtm_safari</string>
 </dict>
