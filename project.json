@@ -11,5 +11,10 @@
     "lgtm",
     "merge",
     "pull request"
-  ]
+  ],
+  "release": {
+    "BundleId": "denvazh.extensions.safari.lgtm",
+    "DeveloperId": "9MSN4PCVZ9",
+    "URL": "http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz"
+  }
 }
