@@ -2,20 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-   <key>Extension Updates</key>
-   <array>
-     <dict>
-       <key>CFBundleIdentifier</key>
-       <string>denvazh.extensions.safari.lgtm</string>
-       <key>Developer Identifier</key>
-       <string>9MSN4PCVZ9</string>
-       <key>CFBundleVersion</key>
-       <string>0.3.1</string>
-       <key>CFBundleShortVersionString</key>
-       <string>0.3.1</string>
-       <key>URL</key>
-       <string>http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
-     </dict>
-   </array>
+	<key>Extension Updates</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>denvazh.extensions.safari.lgtm</string>
+			<key>CFBundleShortVersionString</key>
+			<string>0.3.2</string>
+			<key>CFBundleVersion</key>
+			<string>0.3.2</string>
+			<key>Developer Identifier</key>
+			<string>9MSN4PCVZ9</string>
+			<key>URL</key>
+			<string>http://denvazh.github.io/lgtm_safari/extensions/lgtm_safari.safariextz</string>
+		</dict>
+	</array>
 </dict>
 </plist>
